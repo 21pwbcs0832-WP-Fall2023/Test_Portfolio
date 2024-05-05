@@ -1,0 +1,161 @@
+   {
+      "id": "4",
+      "src": "./img/feather-pen-1.png",
+      "title": "Webflow Development",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+    }
+    Contact file.
+    export default function ContactMe() {
+  return (
+    <section id="Contact" className="contact--section">
+      <div>
+        <p className="sub--title">Get In Touch</p>
+        <h2>Contact Me</h2>
+        {/* <p className="text-lg">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, odit.
+        </p> */}
+      </div>
+      <form className="contact--form--container">
+        <div className="container">
+          <label htmlFor="first-name" className="contact--label">
+            <span className="text-md">First Name</span>
+            <input
+              type="text"
+              className="contact--input text-md"
+              name="first-name"
+              id="first-name"
+              required
+            />
+          </label>
+          <label htmlFor="last-name" className="contact--label">
+            <span className="text-md">Last Name</span>
+            <input
+              type="text"
+              className="contact--input text-md"
+              name="last-name"
+              id="last-name"
+              required
+            />
+          </label>
+          <label htmlFor="email" className="contact--label">
+            <span className="text-md">Email</span>
+            <input
+              type="email"
+              className="contact--input text-md"
+              name="email"
+              id="email"
+              required
+            />
+          </label>
+          <label htmlFor="phone-number" className="contact--label">
+            <span className="text-md">phone-number</span>
+            <input
+              type="number"
+              className="contact--input text-md"
+              name="phone-number"
+              id="phone-number"
+              required
+            />
+          </label>
+        </div>
+        <label htmlFor="choode-topic" className="contact--label">
+          <span className="text-md">Choose a topic</span>
+          <select id="choose-topic" className="contact--input text-md">
+            <option>Select One...</option>
+            <option>Item 1</option>
+            <option>Item 2</option>
+            <option>Item 3</option>
+          </select>
+        </label>
+        <label htmlFor="message" className="contact--label">
+          <span className="text-md">Message</span>
+          <textarea
+            className="contact--input text-md"
+            id="message"
+            rows="8"
+            placeholder="Type your message..."
+          />
+        </label>
+        <label htmlFor="checkboc" className="checkbox--label">
+          <input type="checkbox" required name="checkbox" id="checkbox" />
+          <span className="text-sm">I accept the terms</span>
+        </label>
+        <div>
+          <button className="btn btn-primary contact--form--btn">Submit</button>
+        </div>
+      </form>
+    </section>
+  );
+}
+
+contact style.
+.contact--section {
+  display: flex;
+  padding: 150px 85px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 64px;
+}
+.contact--form--container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(5, auto);
+  width: 40%;
+  row-gap: 32px;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  column-gap: 32px;
+  row-gap: 32px;
+}
+.contact--label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10.6px;
+  flex: 1 0 0;
+  width: 100%;
+}
+.contact--input {
+  display: flex;
+  font-family: "Roboto";
+  padding: 16px;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1.333px solid var(--primary);
+  background: var(--white);
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Some browsers will not display the caret when using calc, so we put the fallback first */
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.5303 21.2052C16.2374 21.4981 15.7626 21.4981 15.4697 21.2052L7.82318 13.5587C7.53029 13.2658 7.53029 12.791 7.82318 12.4981L8.17674 12.1445C8.46963 11.8516 8.9445 11.8516 9.2374 12.1445L16 18.9071L22.7626 12.1445C23.0555 11.8516 23.5303 11.8516 23.8232 12.1445L24.1768 12.4981C24.4697 12.791 24.4697 13.2658 24.1768 13.5587L16.5303 21.2052Z" fill="%23033333"/></svg>')
+    white no-repeat 98.5% !important; /* !important used for overriding all other customisations */
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.5303 21.2052C16.2374 21.4981 15.7626 21.4981 15.4697 21.2052L7.82318 13.5587C7.53029 13.2658 7.53029 12.791 7.82318 12.4981L8.17674 12.1445C8.46963 11.8516 8.9445 11.8516 9.2374 12.1445L16 18.9071L22.7626 12.1445C23.0555 11.8516 23.5303 11.8516 23.8232 12.1445L24.1768 12.4981C24.4697 12.791 24.4697 13.2658 24.1768 13.5587L16.5303 21.2052Z" fill="%23033333"/></svg>')
+    white no-repeat calc(100% - 20px); /* Better placement regardless of input width */
+}
+/*For IE*/
+select::-ms-expand {
+  display: none;
+}
+.checkbox--label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10.6px;
+  flex: 1 0 0;
+  justify-content: flex-start;
+}
+input[type="checkbox"] {
+  width: 21px;
+  height: 21px;
+  border: 0.15em solid var(--heading-color);
+  border-radius: 0.15em;
+  transform: translatey(-0.075em);
+}
+/* Contact End */

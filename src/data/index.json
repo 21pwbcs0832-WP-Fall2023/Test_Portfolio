@@ -1,0 +1,69 @@
+{
+  "skills": [
+    {
+      "id": "1",
+      "src": "./img/product-chain-1.png",
+      "title": "Front-End",
+      "description": "I specialize in Front-End development, where I focus on creating engaging user interfaces and intuitive experiences. Ensuring they are not only visually appealing but also user-friendly. My goal is to make navigating the digital world a breeze for everyone."
+    },
+    {
+      "id": "2",
+      "src": "./img/tag-1.png",
+      "title": "Back-End",
+      "description": "In Back-End development, I work behind the scenes, handling data management, server operations, and database interactions. With my expertise, I ensure that websites and applications run smoothly, securely, and efficiently."
+    },
+    {
+      "id": "3",
+      "src": "./img/feather-pen-2.png",
+      "title": "UI & UX Design",
+      "description": "I specialize in UI & UX design, where I create visually appealing and user-friendly interfaces. With a focus on user experience, I craft designs that enhance usability and engagement. My goal is to make digital interactions intuitive and enjoyable for everyone."
+    }
+ 
+  ],
+  "portfolio": [
+    {
+      "id": "1",
+      "src": "./img/image3.png",
+      "title": "Ecommerce Shop",
+      "link": "View In Github"
+    },
+    {
+      "id": "2",
+      "src": "./img/image4.png",
+      "title": "Digital-Clock",
+      "link": "View In Github"
+    },
+    {
+      "id": "3",
+      "src": "./img/image5.png",
+      "title": "Cafe De Peshawar",
+      "link": "View In Github"
+    }
+  ],
+  "testimonial": [
+    {
+      "id": "1",
+      "count": "5",
+      "src": "./img/avatar-image.png",
+      "description": "My friend Kashif Qamar is a Front-End magician, weaving magic with code to create beautiful websites. With a keen eye for design and skillful coding, they make the digital world a more delightful place.",
+      "author_name": "Kashif Qamar",
+      "author_designation": "Frontend Developer"
+    },
+    {
+      "id": "2",
+      "count": "5",
+      "src": "./img/avatar-image-1.png",
+      "description": "Naeem Shah is a Back-End genius, expertly managing server tasks with precision. With careful attention to every detail, he ensures websites operate flawlessly in the background.",
+      "author_name": "Naeem Shah",
+      "author_designation": "Backend Developer"
+    },
+    {
+      "id": "3",
+      "count": "5",
+      "src": "./img/avatar-image-2.png",
+      "description": "M Shahid excels in UI & UX design, crafting interfaces that captivate users. With his creative flair and attention to detail, he ensures seamless digital experiences. Websites and apps designed by him are both visually stunning and intuitive to use.",
+      "author_name": "M Shahid",
+      "author_designation": "UI/UX Designer"
+    }
+  ]
+}
